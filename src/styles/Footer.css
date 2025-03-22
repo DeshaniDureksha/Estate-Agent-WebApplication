@@ -1,0 +1,21 @@
+.footer {
+    background-color: #005F73; 
+    color: white; 
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 3px solid #0056b3; 
+  }
+  
+  .footer-container p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer {
+      font-size: 12px;
+    }
+  }
+  

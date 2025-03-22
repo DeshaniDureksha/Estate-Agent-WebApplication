@@ -1,0 +1,138 @@
+
+.search-section {
+  padding: 30px 20px;
+  background-image: url('./background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 1430px;
+  text-align: center;
+}
+
+
+.title-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title-container h1 {
+  font-size: 2.5rem; 
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.title-container p {
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
+
+
+.search-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: start;
+}
+
+
+.search-container .form-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+}
+
+.search-container .form-group label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.search-container .form-group input,
+.search-container .form-group select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+
+.search-container .form-group input::placeholder {
+  color: #666;
+}
+
+
+.search-container .search-button {
+  grid-column: span 3;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  background-color: #148bc6;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;
+}
+
+.search-container .search-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 5px 15px rgba(0, 91, 187, 0.5);
+}
+
+/* Responsive adjustments for tablets */
+@media (max-width: 1024px) {
+  .title-container h1 {
+    font-size: 2rem; /* Slightly smaller for tablets */
+  }
+
+  .title-container p {
+    font-size: 1rem; 
+  }
+
+  .search-container {
+    grid-template-columns: repeat(2, 1fr); /* Adjust to two columns */
+    gap: 15px;
+  }
+
+  .search-container .search-button {
+    grid-column: span 2; /* Adjust button span */
+  }
+}
+
+/* Responsive adjustments for smaller screens (mobile) */
+@media (max-width: 768px) {
+  .title-container h1 {
+    font-size: 1.8rem; 
+  }
+
+  .title-container p {
+    font-size: 0.9rem;
+  }
+
+  .search-container {
+    grid-template-columns: 1fr; /* Stack all elements vertically */
+    gap: 15px;
+  }
+
+  .search-container .form-group {
+    min-width: 100%; 
+  }
+
+  .search-container .search-button {
+    grid-column: span 1; 
+    width: 100%;
+  }
+}
