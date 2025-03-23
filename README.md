@@ -1,9 +1,5 @@
 # Estate Agent Client-Side Web Application
 
-A comprehensive guide to clone, install and run the responsive React-based real estate property search application.
-
-## Project Overview
-
 This application provides an intuitive interface for browsing, searching, and exploring real estate properties with the following features:
 
 - 🔍 **Advanced Search Filters**: Search properties by type, size, price range, and availability date
@@ -14,11 +10,6 @@ This application provides an intuitive interface for browsing, searching, and ex
 - 🌟 **Aesthetic Layout**: Clean visuals with consistent color scheme and clear hierarchy
 
 ## Installation Guide
-
-### Prerequisites
-- Node.js and npm installed on your system
-- Git (for cloning option)
-- Web browser
 
 ### Option 1: Clone the Repository
 
